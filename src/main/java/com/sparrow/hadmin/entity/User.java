@@ -41,6 +41,7 @@ public class User extends BaseEntity {
 	/**
 	 * 用户密码
 	 */
+	@Column(name = "passwordtp")
 	private String password;
 
 	/**
@@ -89,13 +90,13 @@ public class User extends BaseEntity {
 	/**
 	 * 创建时间
 	 */
-	@JSONField(format = "yyyy-MM-dd HH:mm:ss")
+	@JSONField(format = "yyyy-MM-dd")
 	private Date createTime;
 
 	/**
 	 * 更新时间
 	 */
-	@JSONField(format = "yyyy-MM-dd HH:mm:ss")
+	@JSONField(format = "yyyy-MM-dd")
 	private Date updateTime;
 
 	@ManyToMany(cascade = { CascadeType.REFRESH }, fetch = FetchType.LAZY)

@@ -31,6 +31,7 @@ public class Resource extends BaseEntity {
 	/**
 	 * 资源名称
 	 */
+	@Column(name = "nametp")
 	private String name;
 
 	/**
@@ -51,6 +52,7 @@ public class Resource extends BaseEntity {
 	/**
 	 * 层级
 	 */
+	@Column(name = "leveltp")
 	private Integer level;
 
 	/**

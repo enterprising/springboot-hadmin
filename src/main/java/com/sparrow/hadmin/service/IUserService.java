@@ -1,7 +1,7 @@
 package com.sparrow.hadmin.service;
 
-import com.sparrow.hadmin.service.support.IBaseService;
 import com.sparrow.hadmin.entity.User;
+import com.sparrow.hadmin.service.support.IBaseService;
 
 /**
  * <p>

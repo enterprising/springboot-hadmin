@@ -73,6 +73,7 @@ public class MyRealm extends AuthorizingRealm {
 		}
 		// 密码错误
 		if (!MD5Utils.md5(password).equals(user.getPassword())) {
+			System.out.println(MD5Utils.md5(password));
 			throw new IncorrectCredentialsException("账号或密码不正确");
 		}
 		// 账号锁定

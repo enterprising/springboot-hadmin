@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- *@deprecated  用户管理
+ *用户管理
  *@author 贤云
  *
  **/

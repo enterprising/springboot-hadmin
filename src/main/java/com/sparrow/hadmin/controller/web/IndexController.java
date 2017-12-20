@@ -17,6 +17,6 @@ public class IndexController extends BaseController{
 	@RequestMapping(value={"/","/index"})
 	public String index(){
 		logger.debug("进入首页");
-		return "index";
+		return "admin/login";
 	}
 }

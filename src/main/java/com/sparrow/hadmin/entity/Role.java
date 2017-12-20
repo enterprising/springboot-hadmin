@@ -34,6 +34,7 @@ public class Role extends BaseEntity {
 	/**
 	 * 角色名称
 	 */
+	@Column(name = "nametp")
 	private String name;
 
 	/**
@@ -44,6 +45,7 @@ public class Role extends BaseEntity {
 	/**
 	 * 角色状态,0：正常；1：删除
 	 */
+	@Column(name = "statustp")
 	private Integer status;
 
 	/**
