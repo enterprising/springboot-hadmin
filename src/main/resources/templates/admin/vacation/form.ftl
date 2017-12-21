@@ -36,28 +36,34 @@
                     </div>
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" id="frm" method="post" action="">
-                        	<input type="hidden" id="id" name="id" value="${article.id}">
+                        	<input type="hidden" id="id" name="id" value="1">
+
+                            <#--<div class="form-group">-->
+                                <#--<label class="col-sm-2 control-label">标题：</label>-->
+                                <#--<div class="col-sm-9">-->
+                                    <#--<input id="title" name="title" class="form-control" type="text" value="${article.title}">-->
+                                <#--</div>-->
+                            <#--</div>-->
+                            <div class="input-group date form-group" data-provide="datepicker">
+                                <label class="col-sm-2 control-label">开始时间：</label>
+                                <input type="text" class="col-sm-4" id="vacation_start" name="vacation_start">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+
+                            <div class="input-group date form-group" data-provide="datepicker">
+                                <label class="col-sm-2 control-label">结束时间：</label>
+                                <input type="text" class="col-sm-4" id="vacation_end" name="vacation_end">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">假期：</label>
+                                <label class="col-sm-2 control-label">假期联系电话：</label>
                                 <div class="col-sm-9">
-                                    <select name="articleSort.id" class="form-control">
-                                    <#list articleSorts as sort>
-                                        <option value="${sort.id}" <#if sort.id=article.articleSort.id>selected="selected"</#if>>${sort.title}</option>
-                                    </#list>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">标题：</label>
-                                <div class="col-sm-9">
-                                    <input id="title" name="title" class="form-control" type="text" value="${article.title}">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">作者：</label>
-                                <div class="col-sm-9">
-                                    <input id="author" name="author" class="form-control" type="text" value="${article.author}">
+                                    <input id="homeNum" name="homeNum" class="form-control" type="text">
                                 </div>
                             </div>
 
@@ -70,12 +76,12 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">备注：</label>
-                                <div class="col-sm-9" >
-                                    <textarea id="remark" class="form-control" name="remark" >${article.remark}</textarea>
-                                </div>
-                            </div>
+                            <#--<div class="form-group">-->
+                                <#--<label class="col-sm-2 control-label">备注：</label>-->
+                                <#--<div class="col-sm-9" >-->
+                                    <#--<textarea id="remark" class="form-control" name="remark" >${article.remark}</textarea>-->
+                                <#--</div>-->
+                            <#--</div>-->
 
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
@@ -96,6 +102,7 @@
     <link rel="stylesheet" type="text/css" href="${ctx!}/hadmin/js/plugins/wangEditor-2.1.23/dist/css/wangEditor.min.css"/>
     <script type="text/javascript" src="${ctx!}/hadmin/js/plugins/wangEditor-2.1.23/dist/js/wangEditor.js"></script>
     <script type="text/javascript" src="${ctx!}/hadmin/js/plugins/wangEditor-2.1.23/editorconfig.js"></script>
+    <script type="text/javascript" src="${ctx!}/hadmin/js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
     <script type="text/javascript">
     $(document).ready(function () {
@@ -106,32 +113,26 @@
 	    });*/
 
 	    $("#frm").validate({
-    	    rules: {
-    	    	title: {
-    	        required: true,
-    	        minlength: 4,
-    	    	maxlength: 50
-    	      },
-    	      	status: {
-    	        required: true
-    	      },
-    	      	description: {
-    	        required: true,
-    	        minlength: 5
-    	      }
-    	    },
-    	    messages: {
-                title:{
-                    required:"标题必填"
+            rules: {
+                description: {
+                    required: true,
+                    minlength: 5
+                }
+            },
+            messages: {
+                description: {
+                    required: "请假原因必填"
                 }
             },
     	    submitHandler:function(form){
+    	        alert("ok");
     	    	$.ajax({
    	    		   type: "POST",
    	    		   dataType: "json",
-   	    		   url: "${ctx!}/admin/article/edit",
+   	    		   url: "${ctx!}/admin/vacation/edit",
    	    		   data: $(form).serialize(),
    	    		   success: function(msg){
+   	    		       alert("成功了");
 	   	    			layer.msg(msg.message, {time: 2000},function(){
 	   						var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
 	   						parent.layer.close(index);

@@ -20915,3 +20915,666 @@ java.lang.ClassNotFoundException: User
 2017-12-20 23:44:11.302 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select count(role0_.id) as col_0_0_ from tb_role role0_
 2017-12-20 23:44:11.303 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select * from ( select role0_.id as id1_4_, role0_.create_time as create_t2_4_, role0_.description as descript3_4_, role0_.nametp as nametp4_4_, role0_.role_key as role_key5_4_, role0_.statustp as statustp6_4_, role0_.update_time as update_t7_4_ from tb_role role0_ ) where rownum <= ?
 2017-12-20 23:44:11.307 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:50:23.297 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:23.310 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_8_0_, roles0_.role_id as role_id2_8_0_, role1_.id as id1_4_1_, role1_.create_time as create_t2_4_1_, role1_.description as descript3_4_1_, role1_.nametp as nametp4_4_1_, role1_.role_key as role_key5_4_1_, role1_.statustp as statustp6_4_1_, role1_.update_time as update_t7_4_1_ from tb_user_role roles0_, tb_role role1_ where roles0_.role_id=role1_.id and roles0_.user_id=?
+2017-12-20 23:50:23.313 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:50:23.322 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:23.332 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:23.339 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:23.345 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:23.349 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:23.353 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:23.360 [http-nio-8082-exec-8] ERROR PrincipalTag - Unable to find class for name [User]
+java.lang.ClassNotFoundException: User
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.getPrincipalFromClassName(PrincipalTag.java:90)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.render(PrincipalTag.java:60)
+	at com.sparrow.hadmin.config.shiro.freemarker.SecureTag.execute(SecureTag.java:16)
+	at freemarker.core.Environment.visit(Environment.java:427)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:101)
+	at freemarker.core.Environment.visit(Environment.java:327)
+	at freemarker.core.Environment.visit(Environment.java:333)
+	at freemarker.core.Environment.process(Environment.java:306)
+	at freemarker.template.Template.process(Template.java:386)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:178)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-20 23:50:26.602 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:26.605 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_8_0_, roles0_.role_id as role_id2_8_0_, role1_.id as id1_4_1_, role1_.create_time as create_t2_4_1_, role1_.description as descript3_4_1_, role1_.nametp as nametp4_4_1_, role1_.role_key as role_key5_4_1_, role1_.statustp as statustp6_4_1_, role1_.update_time as update_t7_4_1_ from tb_user_role roles0_, tb_role role1_ where roles0_.role_id=role1_.id and roles0_.user_id=?
+2017-12-20 23:50:26.608 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:50:26.616 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:26.620 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:26.707 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - select count(articlesor0_.id) as col_0_0_ from tb_article_sort articlesor0_
+2017-12-20 23:50:26.710 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - select * from ( select articlesor0_.id as id1_1_, articlesor0_.create_time as create_t2_1_, articlesor0_.description as descript3_1_, articlesor0_.status as status4_1_, articlesor0_.title as title5_1_, articlesor0_.update_time as update_t6_1_ from tb_article_sort articlesor0_ ) where rownum <= ?
+2017-12-20 23:50:27.779 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:27.782 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_8_0_, roles0_.role_id as role_id2_8_0_, role1_.id as id1_4_1_, role1_.create_time as create_t2_4_1_, role1_.description as descript3_4_1_, role1_.nametp as nametp4_4_1_, role1_.role_key as role_key5_4_1_, role1_.statustp as statustp6_4_1_, role1_.update_time as update_t7_4_1_ from tb_user_role roles0_, tb_role role1_ where roles0_.role_id=role1_.id and roles0_.user_id=?
+2017-12-20 23:50:27.784 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:50:27.791 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:27.795 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:27.799 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:50:27.880 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - select count(role0_.id) as col_0_0_ from tb_role role0_
+2017-12-20 23:50:27.883 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - select * from ( select role0_.id as id1_4_, role0_.create_time as create_t2_4_, role0_.description as descript3_4_, role0_.nametp as nametp4_4_, role0_.role_key as role_key5_4_, role0_.statustp as statustp6_4_, role0_.update_time as update_t7_4_ from tb_role role0_ ) where rownum <= ?
+2017-12-20 23:50:27.887 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:54:37.205 [Thread-21] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用关闭
+2017-12-20 23:54:37.244 [Thread-21] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-12-20 23:54:41.138 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-20 23:54:41.397 [main] INFO  com.sparrow.hadmin.Application - Starting Application on localhost with PID 35985 (/Users/enterprising/IdeaProjects/springboot-hadmin/target/classes started by enterprising in /Users/enterprising/IdeaProjects/springboot-hadmin)
+2017-12-20 23:54:41.398 [main] DEBUG com.sparrow.hadmin.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-20 23:54:41.398 [main] INFO  com.sparrow.hadmin.Application - No active profile set, falling back to default profiles: default
+2017-12-20 23:54:41.586 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-20 23:54:41.681 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-20 23:54:45.206 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2017-12-20 23:54:45.229 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2017-12-20 23:54:45.229 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2017-12-20 23:54:45.231 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/
+2017-12-20 23:54:45.245 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2017-12-20 23:54:45.253 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2017-12-20 23:54:45.296 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:54:45.296 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:54:45.296 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:54:45.306 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:54:45.306 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:54:45.306 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:54:45.307 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2017-12-20 23:54:45.324 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T
+2017-12-20 23:54:45.324 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/.ehcache-diskstore.lock
+2017-12-20 23:54:45.325 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2017-12-20 23:54:45.325 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:54:45.333 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/resource%0043ache.index
+2017-12-20 23:54:45.333 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:54:45.383 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2017-12-20 23:54:45.386 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2017-12-20 23:54:45.387 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2017-12-20 23:54:45.387 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2017-12-20 23:54:45.388 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2017-12-20 23:54:45.418 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2017-12-20 23:54:45.419 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2017-12-20 23:54:45.419 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2017-12-20 23:54:45.421 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2017-12-20 23:54:45.422 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2017-12-20 23:54:45.422 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2017-12-20 23:54:45.423 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2017-12-20 23:54:45.423 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2017-12-20 23:54:45.430 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2017-12-20 23:54:45.430 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2017-12-20 23:54:45.430 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2017-12-20 23:54:46.200 [main] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2017-12-20 23:54:46.232 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-12-20 23:54:46.530 [main] WARN  org.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2017-12-20 23:54:46.532 [main] WARN  org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2017-12-20 23:54:46.965 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:54:47.006 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:54:47.006 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:54:47.008 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:54:47.009 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:54:47.010 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:54:47.410 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_vacation (id number(10,0) not null) on commit delete rows
+2017-12-20 23:54:47.416 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_article (id number(10,0) not null) on commit delete rows
+2017-12-20 23:54:49.530 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-20 23:54:49.531 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-20 23:54:49.740 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-20 23:54:53.057 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用刷新
+2017-12-20 23:54:53.072 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-20 23:54:53.085 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8082]
+2017-12-20 23:54:53.103 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-20 23:54:53.120 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-20 23:54:53.121 [main] INFO  com.sparrow.hadmin.Application - Started Application in 12.288 seconds (JVM running for 14.017)
+2017-12-20 23:54:53.122 [main] DEBUG com.sparrow.hadmin.Application - 启动成功
+2017-12-20 23:54:56.063 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-20 23:54:57.756 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.868 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.873 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_8_0_, roles0_.role_id as role_id2_8_0_, role1_.id as id1_4_1_, role1_.create_time as create_t2_4_1_, role1_.description as descript3_4_1_, role1_.nametp as nametp4_4_1_, role1_.role_key as role_key5_4_1_, role1_.statustp as statustp6_4_1_, role1_.update_time as update_t7_4_1_ from tb_user_role roles0_, tb_role role1_ where roles0_.role_id=role1_.id and roles0_.user_id=?
+2017-12-20 23:54:57.883 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:54:57.893 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.898 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.903 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.908 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.912 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.916 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:54:57.923 [http-nio-8082-exec-4] ERROR PrincipalTag - Unable to find class for name [User]
+java.lang.ClassNotFoundException: User
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.getPrincipalFromClassName(PrincipalTag.java:90)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.render(PrincipalTag.java:60)
+	at com.sparrow.hadmin.config.shiro.freemarker.SecureTag.execute(SecureTag.java:16)
+	at freemarker.core.Environment.visit(Environment.java:427)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:101)
+	at freemarker.core.Environment.visit(Environment.java:327)
+	at freemarker.core.Environment.visit(Environment.java:333)
+	at freemarker.core.Environment.process(Environment.java:306)
+	at freemarker.template.Template.process(Template.java:386)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:178)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-20 23:56:26.250 [Thread-28] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用关闭
+2017-12-20 23:56:26.275 [Thread-28] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-12-20 23:56:31.179 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-20 23:56:31.277 [main] INFO  com.sparrow.hadmin.Application - Starting Application on localhost with PID 36078 (/Users/enterprising/IdeaProjects/springboot-hadmin/target/classes started by enterprising in /Users/enterprising/IdeaProjects/springboot-hadmin)
+2017-12-20 23:56:31.279 [main] DEBUG com.sparrow.hadmin.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-20 23:56:31.279 [main] INFO  com.sparrow.hadmin.Application - No active profile set, falling back to default profiles: default
+2017-12-20 23:56:31.563 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-20 23:56:31.834 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-20 23:56:34.655 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2017-12-20 23:56:34.677 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2017-12-20 23:56:34.677 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2017-12-20 23:56:34.679 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/
+2017-12-20 23:56:34.691 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2017-12-20 23:56:34.698 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2017-12-20 23:56:34.736 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:56:34.736 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:56:34.737 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:56:34.750 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:56:34.751 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:56:34.751 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:56:34.752 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2017-12-20 23:56:34.767 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T
+2017-12-20 23:56:34.768 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/.ehcache-diskstore.lock
+2017-12-20 23:56:34.768 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2017-12-20 23:56:34.768 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:56:34.773 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/resource%0043ache.index
+2017-12-20 23:56:34.774 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:56:34.900 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2017-12-20 23:56:34.902 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2017-12-20 23:56:34.903 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2017-12-20 23:56:34.903 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2017-12-20 23:56:34.903 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2017-12-20 23:56:34.949 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2017-12-20 23:56:34.951 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2017-12-20 23:56:34.951 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2017-12-20 23:56:34.956 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2017-12-20 23:56:34.958 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2017-12-20 23:56:34.960 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2017-12-20 23:56:34.961 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2017-12-20 23:56:34.961 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2017-12-20 23:56:34.977 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2017-12-20 23:56:34.978 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2017-12-20 23:56:34.980 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2017-12-20 23:56:35.632 [main] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2017-12-20 23:56:35.639 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-12-20 23:56:35.814 [main] WARN  org.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2017-12-20 23:56:35.816 [main] WARN  org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2017-12-20 23:56:36.228 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:56:36.230 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:56:36.231 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:56:36.231 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:56:36.231 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:56:36.231 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:56:36.517 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_vacation (id number(10,0) not null) on commit delete rows
+2017-12-20 23:56:36.525 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_article (id number(10,0) not null) on commit delete rows
+2017-12-20 23:56:38.477 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-20 23:56:38.478 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-20 23:56:38.585 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-20 23:56:41.374 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用刷新
+2017-12-20 23:56:41.383 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-20 23:56:41.391 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8082]
+2017-12-20 23:56:41.411 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-20 23:56:41.427 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-20 23:56:41.428 [main] INFO  com.sparrow.hadmin.Application - Started Application in 10.816 seconds (JVM running for 12.801)
+2017-12-20 23:56:41.428 [main] DEBUG com.sparrow.hadmin.Application - 启动成功
+2017-12-20 23:56:42.091 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-20 23:56:49.777 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.893 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.897 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_8_0_, roles0_.role_id as role_id2_8_0_, role1_.id as id1_4_1_, role1_.create_time as create_t2_4_1_, role1_.description as descript3_4_1_, role1_.nametp as nametp4_4_1_, role1_.role_key as role_key5_4_1_, role1_.statustp as statustp6_4_1_, role1_.update_time as update_t7_4_1_ from tb_user_role roles0_, tb_role role1_ where roles0_.role_id=role1_.id and roles0_.user_id=?
+2017-12-20 23:56:49.908 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:56:49.919 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.924 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.929 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.934 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.938 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.943 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:56:49.948 [http-nio-8082-exec-8] ERROR PrincipalTag - Unable to find class for name [User]
+java.lang.ClassNotFoundException: User
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.getPrincipalFromClassName(PrincipalTag.java:90)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.render(PrincipalTag.java:60)
+	at com.sparrow.hadmin.config.shiro.freemarker.SecureTag.execute(SecureTag.java:16)
+	at freemarker.core.Environment.visit(Environment.java:427)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:101)
+	at freemarker.core.Environment.visit(Environment.java:327)
+	at freemarker.core.Environment.visit(Environment.java:333)
+	at freemarker.core.Environment.process(Environment.java:306)
+	at freemarker.template.Template.process(Template.java:386)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:178)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-20 23:57:58.164 [Thread-27] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用关闭
+2017-12-20 23:57:58.185 [Thread-27] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-12-20 23:58:03.532 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-20 23:58:03.666 [main] INFO  com.sparrow.hadmin.Application - Starting Application on localhost with PID 36155 (/Users/enterprising/IdeaProjects/springboot-hadmin/target/classes started by enterprising in /Users/enterprising/IdeaProjects/springboot-hadmin)
+2017-12-20 23:58:03.666 [main] DEBUG com.sparrow.hadmin.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-20 23:58:03.667 [main] INFO  com.sparrow.hadmin.Application - No active profile set, falling back to default profiles: default
+2017-12-20 23:58:03.840 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-20 23:58:03.916 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-20 23:58:06.085 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2017-12-20 23:58:06.102 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2017-12-20 23:58:06.102 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2017-12-20 23:58:06.104 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/
+2017-12-20 23:58:06.116 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2017-12-20 23:58:06.129 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2017-12-20 23:58:06.229 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:58:06.229 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:58:06.230 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:58:06.246 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:58:06.247 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:58:06.247 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:58:06.248 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2017-12-20 23:58:06.261 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T
+2017-12-20 23:58:06.261 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/.ehcache-diskstore.lock
+2017-12-20 23:58:06.261 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2017-12-20 23:58:06.261 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:58:06.268 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/resource%0043ache.index
+2017-12-20 23:58:06.269 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:58:06.338 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2017-12-20 23:58:06.339 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2017-12-20 23:58:06.339 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2017-12-20 23:58:06.340 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2017-12-20 23:58:06.340 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2017-12-20 23:58:06.353 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2017-12-20 23:58:06.353 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2017-12-20 23:58:06.354 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2017-12-20 23:58:06.355 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2017-12-20 23:58:06.356 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2017-12-20 23:58:06.373 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2017-12-20 23:58:06.374 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2017-12-20 23:58:06.374 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2017-12-20 23:58:06.380 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2017-12-20 23:58:06.380 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2017-12-20 23:58:06.380 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2017-12-20 23:58:07.420 [main] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2017-12-20 23:58:07.450 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-12-20 23:58:07.570 [main] WARN  org.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2017-12-20 23:58:07.572 [main] WARN  org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2017-12-20 23:58:07.893 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:58:07.895 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:58:07.895 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:58:07.895 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:58:07.895 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:58:07.896 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:58:08.263 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_vacation (id number(10,0) not null) on commit delete rows
+2017-12-20 23:58:08.273 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_article (id number(10,0) not null) on commit delete rows
+2017-12-20 23:58:10.906 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-20 23:58:10.907 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-20 23:58:11.090 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-20 23:58:14.165 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用刷新
+2017-12-20 23:58:14.176 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-20 23:58:14.185 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8082]
+2017-12-20 23:58:14.209 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-20 23:58:14.234 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-20 23:58:14.236 [main] INFO  com.sparrow.hadmin.Application - Started Application in 11.168 seconds (JVM running for 13.505)
+2017-12-20 23:58:14.236 [main] DEBUG com.sparrow.hadmin.Application - 启动成功
+2017-12-20 23:58:14.494 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-20 23:58:16.027 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.152 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.158 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_8_0_, roles0_.role_id as role_id2_8_0_, role1_.id as id1_4_1_, role1_.create_time as create_t2_4_1_, role1_.description as descript3_4_1_, role1_.nametp as nametp4_4_1_, role1_.role_key as role_key5_4_1_, role1_.statustp as statustp6_4_1_, role1_.update_time as update_t7_4_1_ from tb_user_role roles0_, tb_role role1_ where roles0_.role_id=role1_.id and roles0_.user_id=?
+2017-12-20 23:58:16.169 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_5_0_, resources0_.resource_id as resource2_5_0_, resource1_.id as id1_3_1_, resource1_.create_time as create_t2_3_1_, resource1_.description as descript3_3_1_, resource1_.icon as icon4_3_1_, resource1_.is_hide as is_hide5_3_1_, resource1_.leveltp as leveltp6_3_1_, resource1_.nametp as nametp7_3_1_, resource1_.parent_id as parent_13_3_1_, resource1_.sort as sort8_3_1_, resource1_.source_key as source_k9_3_1_, resource1_.source_url as source_10_3_1_, resource1_.type as type11_3_1_, resource1_.update_time as update_12_3_1_ from tb_role_resource resources0_, tb_resource resource1_ where resources0_.resource_id=resource1_.id and resources0_.role_id=?
+2017-12-20 23:58:16.178 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.185 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.190 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.195 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.199 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.209 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_6_, user0_.address as address2_6_, user0_.birthday as birthday3_6_, user0_.create_time as create_t4_6_, user0_.delete_status as delete_s5_6_, user0_.description as descript6_6_, user0_.email as email7_6_, user0_.locked as locked8_6_, user0_.nick_name as nick_nam9_6_, user0_.passwordtp as passwor10_6_, user0_.sex as sex11_6_, user0_.telephone as telepho12_6_, user0_.update_time as update_13_6_, user0_.user_name as user_na14_6_ from tb_user user0_ where user0_.user_name=?
+2017-12-20 23:58:16.215 [http-nio-8082-exec-4] ERROR PrincipalTag - Unable to find class for name [User]
+java.lang.ClassNotFoundException: User
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.getPrincipalFromClassName(PrincipalTag.java:90)
+	at com.sparrow.hadmin.config.shiro.freemarker.PrincipalTag.render(PrincipalTag.java:60)
+	at com.sparrow.hadmin.config.shiro.freemarker.SecureTag.execute(SecureTag.java:16)
+	at freemarker.core.Environment.visit(Environment.java:427)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:101)
+	at freemarker.core.Environment.visit(Environment.java:327)
+	at freemarker.core.Environment.visit(Environment.java:333)
+	at freemarker.core.Environment.process(Environment.java:306)
+	at freemarker.template.Template.process(Template.java:386)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.doFilterInternal(OpenEntityManagerInViewFilter.java:178)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-20 23:59:41.329 [Thread-28] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用关闭
+2017-12-20 23:59:41.342 [Thread-28] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2017-12-20 23:59:45.298 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-20 23:59:45.392 [main] INFO  com.sparrow.hadmin.Application - Starting Application on localhost with PID 36246 (/Users/enterprising/IdeaProjects/springboot-hadmin/target/classes started by enterprising in /Users/enterprising/IdeaProjects/springboot-hadmin)
+2017-12-20 23:59:45.393 [main] DEBUG com.sparrow.hadmin.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-20 23:59:45.401 [main] INFO  com.sparrow.hadmin.Application - No active profile set, falling back to default profiles: default
+2017-12-20 23:59:45.610 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-20 23:59:45.677 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-20 23:59:48.283 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2017-12-20 23:59:48.300 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2017-12-20 23:59:48.301 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2017-12-20 23:59:48.302 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/
+2017-12-20 23:59:48.314 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2017-12-20 23:59:48.321 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2017-12-20 23:59:48.355 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:59:48.355 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:59:48.355 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:59:48.361 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-12-20 23:59:48.361 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-12-20 23:59:48.361 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-12-20 23:59:48.362 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2017-12-20 23:59:48.379 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T
+2017-12-20 23:59:48.380 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/.ehcache-diskstore.lock
+2017-12-20 23:59:48.381 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.data
+2017-12-20 23:59:48.381 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:59:48.398 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file /var/folders/cl/31y_ndb50f528dzjx28tjqg80000gn/T/resource%0043ache.index
+2017-12-20 23:59:48.399 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2017-12-20 23:59:48.454 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2017-12-20 23:59:48.455 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2017-12-20 23:59:48.455 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2017-12-20 23:59:48.456 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2017-12-20 23:59:48.456 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2017-12-20 23:59:48.479 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2017-12-20 23:59:48.481 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2017-12-20 23:59:48.481 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2017-12-20 23:59:48.482 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2017-12-20 23:59:48.483 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2017-12-20 23:59:48.483 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2017-12-20 23:59:48.484 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2017-12-20 23:59:48.484 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2017-12-20 23:59:48.488 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2017-12-20 23:59:48.488 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2017-12-20 23:59:48.488 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2017-12-20 23:59:49.113 [main] ERROR com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+2017-12-20 23:59:49.119 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-12-20 23:59:49.265 [main] WARN  org.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2017-12-20 23:59:49.267 [main] WARN  org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2017-12-20 23:59:49.584 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:59:49.586 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:59:49.586 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:59:49.586 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:59:49.586 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:59:49.586 [main] WARN  org.hibernate.orm.deprecation - HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2017-12-20 23:59:49.882 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_vacation (id number(10,0) not null) on commit delete rows
+2017-12-20 23:59:49.889 [main] DEBUG org.hibernate.SQL - create global temporary table HT_tb_article (id number(10,0) not null) on commit delete rows
+2017-12-20 23:59:51.801 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-20 23:59:51.802 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-20 23:59:51.912 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-20 23:59:55.079 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用刷新
+2017-12-20 23:59:55.088 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2017-12-20 23:59:55.097 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8082]
+2017-12-20 23:59:55.117 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-20 23:59:55.133 [main] DEBUG com.sparrow.hadmin.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-20 23:59:55.134 [main] INFO  com.sparrow.hadmin.Application - Started Application in 10.157 seconds (JVM running for 11.55)
+2017-12-20 23:59:55.134 [main] DEBUG com.sparrow.hadmin.Application - 启动成功
+2017-12-20 23:59:56.150 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
